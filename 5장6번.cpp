@@ -12,7 +12,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 using namespace std;
 
 char& find(char a[], char c, bool& success){
-    for(int i=0;i<strlen(a);i++){
+    for(int i=0;i<strlen(a);i++){  //for(int i=0; a[i] != NULL ; i++) 이방법도 있었다
         if(a[i]==c){
             success = true;
             return a[i];
